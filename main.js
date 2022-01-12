@@ -88,3 +88,18 @@ function lastic(x=allbut,y){
         })
     });
 }
+
+let solidLayer = false;
+function solidlayer(){
+    if (!solidLayer){
+        allbut.forEach(item=>{
+            item.style = "border: none";
+            solidLayer = true;
+        })
+    }else{
+        allbut.forEach(item=>{
+            item.style = "border: 1px solid white";
+            solidLayer = false;
+        })
+    }
+}
